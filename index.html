@@ -15,6 +15,18 @@
 <body>
 
     <section>
+        <div class="bannerVideo" id="slideShow">
+            <video src="./video/malidives.mp4" autoplay muted loop class="active"></video>
+        </div>
+        <div class="bannerVideo" id="slideShow">
+            <video src="./video/amsterdam.mp4" autoplay muted loop></video>
+        </div>
+        <div class="bannerVideo" id="slideShow">
+            <video src="./video/paris.mp4" autoplay muted loop></video>
+        </div>
+        <div class="bannerVideo" id="slideShow">
+            <video src="./video/egypte.mp4" autoplay muted loop></video>
+        </div>
         <div class="container">
             <header id="navbar">
                 <a href="#" class="logo">World</a>
@@ -28,7 +40,13 @@
             <div class="content">
                 <div class="bannerText">
                     <div class="active">
-                        <h2>Tokyo</h2>
+                        <h2>Maldives</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem explicabo numquam expedita
+                            laboriosam voluptates aut dicta, culpa velit adipisci esse maiores, vitae et sapiente
+                            temporibus enim dolor suscipit, recusandae earum.</p>
+                    </div>
+                    <div>
+                        <h2>Amsterdam</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem explicabo numquam expedita
                             laboriosam voluptates aut dicta, culpa velit adipisci esse maiores, vitae et sapiente
                             temporibus enim dolor suscipit, recusandae earum.</p>
@@ -45,12 +63,6 @@
                             laboriosam voluptates aut dicta, culpa velit adipisci esse maiores, vitae et sapiente
                             temporibus enim dolor suscipit, recusandae earum.</p>
                     </div>
-                    <div>
-                        <h2>Maldives</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem explicabo numquam expedita
-                            laboriosam voluptates aut dicta, culpa velit adipisci esse maiores, vitae et sapiente
-                            temporibus enim dolor suscipit, recusandae earum.</p>
-                    </div>
                 </div>
             </div>
             <ul class="socialMedia">
@@ -60,12 +72,13 @@
             </ul>
 
             <ul class="controls">
-                <li><img src="./img/left.png"></li>
-                <li><img src="./img/right.png"></li>
+                <li onclick="prevSlide();"><img src="./img/left.png"></li>
+                <li onclick="nextSlide();"><img src="./img/right.png"></li>
             </ul>
         </div>
     </section>
 
+    <script src="./app.js"></script>
 </body>
 
 </html>
