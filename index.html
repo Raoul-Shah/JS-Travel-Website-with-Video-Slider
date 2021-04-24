@@ -16,16 +16,10 @@
 
     <section>
         <div class="bannerVideo" id="slideShow">
-            <video src="./video/malidives.mp4" autoplay muted loop class="active"></video>
-        </div>
-        <div class="bannerVideo" id="slideShow">
-            <video src="./video/amsterdam.mp4" autoplay muted loop></video>
-        </div>
-        <div class="bannerVideo" id="slideShow">
+            <video src="./video/amsterdam.mp4" autoplay muted loop class="active"></video>
             <video src="./video/paris.mp4" autoplay muted loop></video>
-        </div>
-        <div class="bannerVideo" id="slideShow">
-            <video src="./video/egypte.mp4" autoplay muted loop></video>
+            <video src="./video/egypt.mp4" autoplay muted loop></video>
+            <video src="./video/hongkong.mp4" autoplay muted loop></video>
         </div>
         <div class="container">
             <header id="navbar">
@@ -38,14 +32,8 @@
                 </ul>
             </header>
             <div class="content">
-                <div class="bannerText">
+                <div class="bannerText" id="slideShowText">
                     <div class="active">
-                        <h2>Maldives</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem explicabo numquam expedita
-                            laboriosam voluptates aut dicta, culpa velit adipisci esse maiores, vitae et sapiente
-                            temporibus enim dolor suscipit, recusandae earum.</p>
-                    </div>
-                    <div>
                         <h2>Amsterdam</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem explicabo numquam expedita
                             laboriosam voluptates aut dicta, culpa velit adipisci esse maiores, vitae et sapiente
@@ -63,6 +51,12 @@
                             laboriosam voluptates aut dicta, culpa velit adipisci esse maiores, vitae et sapiente
                             temporibus enim dolor suscipit, recusandae earum.</p>
                     </div>
+                    <div>
+                        <h2>Hong Kong</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem explicabo numquam expedita
+                            laboriosam voluptates aut dicta, culpa velit adipisci esse maiores, vitae et sapiente
+                            temporibus enim dolor suscipit, recusandae earum.</p>
+                    </div>
                 </div>
             </div>
             <ul class="socialMedia">
@@ -72,11 +66,12 @@
             </ul>
 
             <ul class="controls">
-                <li onclick="prevSlide();"><img src="./img/left.png"></li>
-                <li onclick="nextSlide();"><img src="./img/right.png"></li>
+                <li onclick="prevSlide();nextSlideText();"><img src="./img/left.png"></li>
+                <li onclick="nextSlide();nextSlideText();"><img src="./img/right.png"></li>
             </ul>
         </div>
     </section>
+
 
     <script src="./app.js"></script>
 </body>
