@@ -31,3 +31,10 @@ var i = 0;
     i = (i - 1 + slidesText.length) % slidesText.length;
     slidesText[i].classList.add('active');
 }
+
+function toggleMenu() {
+    const menuIcon = document.querySelector('.menuIcon');
+    const navbar = document.getElementById('navbar');
+    menuIcon.classList.toggle('active');
+    navbar.classList.toggle('active');
+}
